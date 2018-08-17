@@ -104,7 +104,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-### Example user template template
 ### Example user template
 
 # IntelliJ project files
