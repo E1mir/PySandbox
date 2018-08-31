@@ -1,0 +1,32 @@
+{
+  "vehicles": [
+    {
+      "car": {
+        "name": "BMW",
+        "model": "850 CSI",
+        "speed": 1000
+      }
+    },
+    {
+      "car": {
+        "name": "Mercedes",
+        "model": "SL65",
+        "speed": 900
+      }
+    },
+    {
+      "truck": {
+        "name": "Jaguar",
+        "model": "EV400",
+        "speed": 850
+      }
+    },
+    {
+      "car": {
+        "name": "Ferrari",
+        "model": "Enzo",
+        "speed": 750
+      }
+    }
+  ]
+}
