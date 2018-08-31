@@ -13,5 +13,22 @@ def list_join_trick():
     print(joined)
 
 
+def list_tuple_unpacking():
+    """
+    List, tuple and set unpacking method
+    """
+    seq = [1, 2, 3, 4]
+    *a, b, c = seq
+    print(a, b, c)
+    a, *b, c = seq
+    print(a, b, c)
+    a, b, *c = seq
+    print(a, b, c)
+    a, b, c, *d = seq
+    print(a, b, c, d)
+    a, b, c, d, *e = seq
+    print(a, b, c, d, e)
+
+
 if __name__ == '__main__':
-    list_join_trick()
+    list_tuple_unpacking()
