@@ -30,5 +30,26 @@ def list_tuple_unpacking():
     print(a, b, c, d, e)
 
 
+def matrix_transposing():
+    """
+    Matrix transposing method (change row and column)
+    If you regularly encounter similar problems, I strongly recommend to
+    use NumPy library: http://www.numpy.org/
+    """
+    original = [
+        ('a', 'b'),
+        ('c', 'd'),
+        ('e', 'f')
+    ]
+    """ Expectation is
+    transposed = [
+        ('a', 'c', 'e'), 
+        ('b', 'd', 'f')
+    ]
+    """
+    transposed = list(zip(*original))
+    print(transposed)
+
+
 if __name__ == '__main__':
-    list_tuple_unpacking()
+    matrix_transposing()
