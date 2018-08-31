@@ -1,4 +1,5 @@
 import itertools
+from collections import OrderedDict
 
 
 def list_join_trick():
@@ -51,5 +52,19 @@ def matrix_transposing():
     print(transposed)
 
 
+def list_duplicate_removing():
+    """
+    Remove duplicate from list
+    """
+    items = [2, 2, 3, 3, 1, 7, 4, 5, 8, 9, 7, 6, 0]
+    # without saving the order
+    unique = list(set(items))
+    print(unique)
+
+    # with saving the order by using OrderedDict
+    unique = list(OrderedDict.fromkeys(items).keys())
+    print(unique)
+
+
 if __name__ == '__main__':
-    matrix_transposing()
+    list_duplicate_removing()
