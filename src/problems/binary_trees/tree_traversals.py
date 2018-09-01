@@ -66,13 +66,22 @@ def generate_tree():
     return r
 
 
-def preorder(tree):
+def pre_order(tree):
     if tree:
         print(tree.get_root_value())
-        preorder(tree.get_left_child())
-        preorder(tree.get_right_child())
+        pre_order(tree.get_left_child())
+        pre_order(tree.get_right_child())
+
+
+def post_order(tree):
+    if tree is not None:
+        post_order(tree.get_left_child())
+        post_order(tree.get_right_child())
+        print(tree.get_root_value())
 
 
 if __name__ == '__main__':
-    tree = generate_tree()
-    preorder(tree)
+    my_tree = generate_tree()
+    pre_order(my_tree)
+    print("----------------------------------")
+    post_order(my_tree)
