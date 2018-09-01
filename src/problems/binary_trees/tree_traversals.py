@@ -54,6 +54,9 @@ def generate_tree():
     # b_1_1_1 has not right child
     b_1_1_2.insert_left(1121)
     b_1_1_2.insert_right(1122)
+    # b_1_2_1 has not child
+    b_1_2_2.insert_left(1221)
+    b_1_2_2.insert_right(1222)
     # b_2_1_1 has not child
     b_2_2_1.insert_left(2211)
     b_2_2_1.insert_right(2212)
