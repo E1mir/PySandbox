@@ -66,5 +66,13 @@ def generate_tree():
     return r
 
 
+def preorder(tree):
+    if tree:
+        print(tree.get_root_value())
+        preorder(tree.get_left_child())
+        preorder(tree.get_right_child())
+
+
 if __name__ == '__main__':
     tree = generate_tree()
+    preorder(tree)
