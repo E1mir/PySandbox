@@ -75,5 +75,16 @@ def dict_sorting():
     print(sorted_l)
 
 
+def dict_set_generators():
+    """
+    Example of the dictionary and set generation
+    """
+    generated_set = {i ** 2 for i in range(10)}
+    generated_dict = {i: i ** 2 for i in range(10)}
+    print(generated_set)
+    print("---------------------")
+    print(generated_dict)
+
+
 if __name__ == '__main__':
-    dict_sorting()
+    dict_set_generators()
