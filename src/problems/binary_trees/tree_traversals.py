@@ -80,8 +80,17 @@ def post_order(tree):
         print(tree.get_root_value())
 
 
+def in_order(tree):
+    if tree is not None:
+        in_order(tree.get_left_child())
+        print(tree.get_root_value())
+        in_order(tree.get_right_child())
+
+
 if __name__ == '__main__':
     my_tree = generate_tree()
     pre_order(my_tree)
     print("----------------------------------")
     post_order(my_tree)
+    print("----------------------------------")
+    in_order(my_tree)
