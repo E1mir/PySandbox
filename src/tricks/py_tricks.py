@@ -66,5 +66,14 @@ def list_duplicate_removing():
     print(unique)
 
 
+def dict_sorting():
+    """
+    Sort dictionary by their values
+    """
+    d = {'apple': 40, 'orange': 80, 'banana': 70}
+    sorted_l = sorted(d, key=d.get, reverse=False)
+    print(sorted_l)
+
+
 if __name__ == '__main__':
-    list_duplicate_removing()
+    dict_sorting()
