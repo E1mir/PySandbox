@@ -1,5 +1,5 @@
 import itertools
-from collections import OrderedDict
+from collections import OrderedDict, Counter
 
 
 def list_join_trick():
@@ -86,5 +86,20 @@ def dict_set_generators():
     print(generated_dict)
 
 
+def frequently_value_finder():
+    """
+    Example of how to find most frequently value in a list
+    """
+    a = [1, 2, 3, 1, 2, 3, 2, 2, 4, 5, 1]
+    freq_value = max(set(a), key=a.count)
+    print("Most frequently value is:", freq_value)
+    print("-----------------------")
+    # by using Counter
+    cnt = Counter(a)
+    most_common_values = cnt.most_common(3)
+    for value, how_many_times in most_common_values:
+        print("{} - {}".format(value, how_many_times))
+
+
 if __name__ == '__main__':
-    dict_set_generators()
+    frequently_value_finder()
