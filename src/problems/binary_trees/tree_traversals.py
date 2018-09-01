@@ -1,6 +1,7 @@
 from problems.binary_trees.tree import BinaryTree
 
-if __name__ == '__main__':
+
+def generate_tree():
     r = BinaryTree("Main root")
     r.insert_left(1)
     r.insert_right(2)
@@ -58,3 +59,9 @@ if __name__ == '__main__':
     b_2_2_1.insert_right(2212)
     # b_2_2_2 has not left child
     b_2_2_2.insert_right(2222)
+
+    return r
+
+
+if __name__ == '__main__':
+    tree = generate_tree()
