@@ -6,6 +6,6 @@ def bubble_sort(arr):
 
 
 if __name__ == '__main__':
-    array = [5, 7, 4, 4, 6, 8, 9, 0, 4, 2, 4]
+    array = [2, 6, 7, 4, 1, 8, 5, 9, 3, 10, 15, 12, 13, 11, 14]
     bubble_sort(array)
     print(array)
