@@ -101,5 +101,9 @@ def frequently_value_finder():
         print("{} - {}".format(value, how_many_times))
 
 
+def add_integer_numbers(first: int, second: int) -> int:
+    return first + second
+
+
 if __name__ == '__main__':
-    frequently_value_finder()
+    print(add_integer_numbers(2, 6))
