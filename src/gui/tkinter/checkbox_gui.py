@@ -3,6 +3,7 @@ from tkinter import *
 window = Tk()
 
 cv = IntVar()
+
 cb = Checkbutton(
     window,
     text='Checkbox',
@@ -23,6 +24,7 @@ c1 = Checkbutton(
     height=5,
     width=20
 )
+
 c2 = Checkbutton(
     window,
     text="Games",
@@ -32,7 +34,9 @@ c2 = Checkbutton(
     height=5,
     width=20
 )
+
 cb.pack()
 c1.pack()
 c2.pack()
+
 window.mainloop()
